@@ -1,0 +1,18 @@
+﻿@model IEnumerable<TH_LTWeb.Models.XEGANMAY>
+@{
+    ViewBag.Title = "SPTheoLoaixe";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>SPTheoLoaixe</h2>
+<div id="xeGanMayList">
+    @foreach (var item in Model)
+    {
+        <div>
+            <p>@item.TenXe</p> <!-- Hiển thị tên xe, thay thế bằng thuộc tính phù hợp trong XEGANMAY -->
+            <img class="hinhxe" alt=" @item.TenXe" src="~/Content/Images/XE/Yamaha/@item.Anhbia" />
+            <p>@item.Mota</p> <!-- Hiển thị mô tả xe -->
+        </div>
+    }
+</div>
+

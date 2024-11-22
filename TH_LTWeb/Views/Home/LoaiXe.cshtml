@@ -1,0 +1,12 @@
+﻿@model IEnumerable<TH_LTWeb.Models.LOAIXE>
+
+<div id="loaiXe">
+    @foreach (var item in Model)
+    {
+        <span>
+        <a href="@Url.Action("SPTheoLoaixe","Home",new {id=item.MaLX})" class="">
+            @item.TenLoaiXe
+        </a>
+       </span>
+    }
+</div>

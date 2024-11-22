@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TH_LTWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|d:\\th_ltweb\\th_ltweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\views\\home\\sptheoloaixe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\views\\home\\sptheoloaixe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\views\\home\\nhaphanphoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\views\\home\\nhaphanphoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\content\\css\\trangchu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\content\\css\\trangchu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\views\\home\\sptheonpp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\views\\home\\sptheonpp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\content\\css\\cssweb.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\content\\css\\cssweb.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\views\\home\\loaixe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\views\\home\\loaixe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|D:\\TH_LTWeb\\th_ltweb\\models\\qlbanxeganmay.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{51FD426F-CEAA-4E50-92BC-C94BB506D520}|TH_LTWeb\\TH_LTWeb.csproj|solutionrelative:th_ltweb\\models\\qlbanxeganmay.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TH_LTWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T10:11:19.186Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "trangchu.css",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Content\\css\\trangchu.css",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Content\\css\\trangchu.css",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Content\\css\\trangchu.css",
+              "RelativeToolTip": "TH_LTWeb\\Content\\css\\trangchu.css",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAswLoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-22T15:02:39.772Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SPTheoLoaixe.cshtml",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\SPTheoLoaixe.cshtml",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Views\\Home\\SPTheoLoaixe.cshtml",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\SPTheoLoaixe.cshtml",
+              "RelativeToolTip": "TH_LTWeb\\Views\\Home\\SPTheoLoaixe.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:33:15.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TH_LTWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwDsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T08:38:49.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Views\\Home\\Details.cshtml",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "TH_LTWeb\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:47:41.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NhaPhanPhoi.cshtml",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\NhaPhanPhoi.cshtml",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Views\\Home\\NhaPhanPhoi.cshtml",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\NhaPhanPhoi.cshtml",
+              "RelativeToolTip": "TH_LTWeb\\Views\\Home\\NhaPhanPhoi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:08:18.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SPTheoNPP.cshtml",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\SPTheoNPP.cshtml",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Views\\Home\\SPTheoNPP.cshtml",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\SPTheoNPP.cshtml",
+              "RelativeToolTip": "TH_LTWeb\\Views\\Home\\SPTheoNPP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T15:39:47.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_LayoutUser.cshtml",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Views\\Shared\\_LayoutUser.cshtml",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeToolTip": "TH_LTWeb\\Views\\Shared\\_LayoutUser.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T09:35:38.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "cssweb.css",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Content\\css\\cssweb.css",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Content\\css\\cssweb.css",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Content\\css\\cssweb.css",
+              "RelativeToolTip": "TH_LTWeb\\Content\\css\\cssweb.css",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAswN4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-22T15:03:54.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoaiXe.cshtml",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\LoaiXe.cshtml",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Views\\Home\\LoaiXe.cshtml",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Views\\Home\\LoaiXe.cshtml",
+              "RelativeToolTip": "TH_LTWeb\\Views\\Home\\LoaiXe.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-22T13:44:08.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "QLBANXEGANMAY.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\TH_LTWeb\\TH_LTWeb\\Models\\QLBANXEGANMAY.edmx",
+              "RelativeDocumentMoniker": "TH_LTWeb\\Models\\QLBANXEGANMAY.edmx",
+              "ToolTip": "D:\\TH_LTWeb\\TH_LTWeb\\Models\\QLBANXEGANMAY.edmx [Diagram1]",
+              "RelativeToolTip": "TH_LTWeb\\Models\\QLBANXEGANMAY.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-22T14:30:37.27Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html>
+<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Thế giới xe</title>
+    <link href="~/Content/css/cssweb.css" rel="stylesheet" />
+    <link href="~/Content/css/trangchu.css" rel="stylesheet" />
+
+    <script src="~/Scripts/chitiet.js"></script>
+
+    <!-- InstanceEndEditable -->
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head
+<body>
+    <header>
+        <img src="~/Content/Images/logo.png" />
+    </header>
+    <div class="trai">
+    </div>
+    <nav>
+        <div id="menu">
+            <ul>
+
+                <li><a href="index.html" target="_self">TRANG CHỦ</a></li>
+
+                <li>
+                    <a>LOẠI XE</a>
+                    <ul>
+                        @Html.Action("LoaiXe", "Home")
+                    </ul>
+                </li>
+
+
+
+
+                <li>
+                    <a>NHÀ PHÂN PHỐI </a>
+                    <ul>
+                        @Html.Action("NhaPhanPhoi","Home")
+                    </ul>
+                </li>
+
+                <li>
+                    <!--<a href="#" target="_self">DANH MỤC SẢN PHẨM</a>-->
+
+                    @*@Html.Action("LoaiXE","Home")*@
+
+
+                    <!--<ul>
+                        <li>
+                            <img class="bieutuong" src="~/Content/Images/honda-icb.png"><a href="honda.html"> XE HONDA</a>
+                            <ul>
+                                <li><a href="honda-so.html">XE SỐ</a></li>
+                                <li><a href="honda-tayga.html">XE TAY GA</a></li>
+                                <li><a href="honda-taycon.html">XE CÔN TAY</a></li>
+                                <li><a href="honda-moto.html">XE MÔ TÔ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img class="bieutuong" src="Images/yamaha-icb.png"><a href="yamaha.html"> XE YAMAHA</a>
+                            <ul>
+                                <li><a href="yamaha-so.html">XE SỐ</a></li>
+                                <li><a href="yamaha-tayga.html">XE TAY GA</a></li>
+                                <li><a href="yamaha-moto.html">XE MÔ TÔ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img class="bieutuong" src="Images/suzuki-icb.png"><a href="suzuki.html"> XE SUZUKI</a>
+                            <ul>
+                                <li><a href="suzuki-so.html">XE SỐ</a></li>
+                                <li><a href="suzuki-tayga.html">XE TAY GA</a></li>
+                                <li><a href="suzuki-contay.html">XE CÔN TAY</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </li>-->
+                @*<li>
+                    <a href="#" target="_self">THÀNH VIÊN</a>
+                    <ul>
+                        <li><a href="Dangky.html" target="_self">Đăng ký thành viên</a></li>
+                        <li><a href="dangnhap.html" target="_self">Đăng nhập</a></li>
+                    </ul>
+                </li>*@
+                @*<li><a href="Lienhe2.html" target="_self">LIÊN HỆ</a></li>*@
+                <ul>
+</div>
+        <div id="phai">
+        </div>
+        <div class="tim">
+            <form>
+                <input type="text" autofocus placeholder="Tìm kiếm xe, giá xe...">
+                <input type="submit" value="Tìm kiếm">
+            </form>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+        <div>
+            @RenderBody()
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <p>HOẠT ĐỘNG</p>
+            <a href="https://www.facebook.com/profile.php?id=100008119811438"><img class="img" src="Images/facebook.png"></a>
+            <a href="https://www.youtube.com/channel/UCP-v-aRbWhEjOKWXxTo7wJw?view_as=subscriber"><img class="img" src="Images/youtube.png"></a>
+        </footer>
+</body>
+<!-- InstanceEnd -->
+</html>
