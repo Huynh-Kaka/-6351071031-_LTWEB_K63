@@ -28,5 +28,7 @@
     <a href="@Url.Action("Index", "Home")">Trở lại trang chủ</a>
 </div>
 
-
+<div>
+    @Html.ActionLink("Đặt xe", "themGioHang", "GioHang", new { id = Model.MaXe, url = Request.Url.ToString() }, new { @class = "btn-datxe" })
+</div>
 

@@ -1,7 +1,12 @@
-﻿@model IEnumerable<TH_LTWeb.Models.XEGANMAY>
+﻿
+﻿@using PagedList.Mvc
+@using TH_LTWeb.Models
+@model PagedList.PagedList<TH_LTWeb.Models.XEGANMAY>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    <link href="~/Content/css/gioiHang.css" rel="stylesheet" />
 }
 
 
@@ -37,9 +42,14 @@
                         </div>
                     }
                 </div>
-</section>
-  
+
+    </section>
+    <p>Trang @(Model.PageNumber < Model.PageCount ? Model.PageNumber : 0) / @Model.PageCount</p>
+    <div class="MenuTrang">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+    </div>
 </article>
+
 
 
 

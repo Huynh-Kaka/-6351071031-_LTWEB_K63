@@ -1,29 +1,36 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TH_LTWeb.Models;
+using PagedList;
+using PagedList.Mvc;
+using System.Web.UI;
 
 namespace TH_LTWeb.Controllers
 {
     public class HomeController : Controller
-        
+
     {
         // GET: Home
 
-       QLBANXEGANMAYEntities1 data=new QLBANXEGANMAYEntities1();
+        QLBANXEGANMAYEntities1 data = new QLBANXEGANMAYEntities1();
 
         private List<XEGANMAY> layxeganmaymoi(int count)
         {
             return data.XEGANMAYs.OrderByDescending(a => a.Ngaycapnhat).Take(count).ToList();
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int ? page)
         {
             var xemoi = layxeganmaymoi(5);
-            return View(xemoi);
+            int pageSize = 5;
+            int pageNum = (page ?? 1);
+            return View(xemoi.ToPagedList(pageNum, pageSize));
+
         }
         public ActionResult LoaiXe()
         {
@@ -46,9 +53,9 @@ namespace TH_LTWeb.Controllers
         }
         public ActionResult SPTheoNPP(int id)
         {
-            var xeganmays=from s in data.XEGANMAYs
-                          where s.MaXe == id
-                          select s;
+            var xeganmays = from s in data.XEGANMAYs
+                            where s.MaXe == id
+                            select s;
             return View(xeganmays.ToList());
         }
 
@@ -57,9 +64,10 @@ namespace TH_LTWeb.Controllers
             var xeganmay = data.XEGANMAYs.FirstOrDefault(s => s.MaXe == id);
             if (xeganmay == null)
             {
-                return HttpNotFound(); 
+                return HttpNotFound();
             }
             return View(xeganmay);
         }
+
     }
 }

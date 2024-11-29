@@ -56,6 +56,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -111,6 +117,7 @@
     <Content Include="Content\css\CUB.css" />
     <Content Include="Content\css\dk.css" />
     <Content Include="Content\css\dn.css" />
+    <Content Include="Content\css\gioiHang.css" />
     <Content Include="Content\css\GSX-S150.css" />
     <Content Include="Content\css\honda.css" />
     <Content Include="Content\css\lh2.css" />
@@ -289,6 +296,7 @@
     <Content Include="Content\Images\yamaha-icb.png" />
     <Content Include="Content\Images\youtube-icon-vector-21082515.jpg" />
     <Content Include="Content\Images\youtube.png" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Global.asax" />
     <Content Include="Models\QLBANXEGANMAY.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -307,7 +315,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NguoidungController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -317,6 +327,7 @@
     <Compile Include="Models\DONDATHANG.cs">
       <DependentUpon>QLBANXEGANMAY.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GioHang.cs" />
     <Compile Include="Models\HANGSANXUAT.cs">
       <DependentUpon>QLBANXEGANMAY.tt</DependentUpon>
     </Compile>
@@ -369,6 +380,12 @@
     <Content Include="Views\Home\SPTheoLoaixe.cshtml" />
     <Content Include="Views\Home\SPTheoNPP.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Nguoidung\DangKy.cshtml" />
+    <Content Include="Views\Nguoidung\Dangnhap.cshtml" />
+    <Content Include="Views\GioHang\Index.cshtml" />
+    <Content Include="Views\GioHang\DonHang.cshtml" />
+    <Content Include="Views\GioHang\GioHangPartVial.cshtml" />
+    <Content Include="Views\GioHang\Xacnhandonhang.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
