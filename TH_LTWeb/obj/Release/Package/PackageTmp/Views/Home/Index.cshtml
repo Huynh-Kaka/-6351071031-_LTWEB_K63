@@ -1,0 +1,57 @@
+﻿
+﻿@using PagedList.Mvc
+@using TH_LTWeb.Models
+@model PagedList.PagedList<TH_LTWeb.Models.XEGANMAY>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    <link href="~/Content/css/gioiHang.css" rel="stylesheet" />
+}
+
+
+
+<article>
+    <section>
+        <!-- InstanceBeginEditable name="noidung" -->
+        <div class="wraper">
+            <div class="slide">
+                <div class="slide_1 ra">
+
+                    <img src="~/Content/Images/FB.jpg" alt="" width="100%" height="200 ">
+                </div>
+                <div class="slide_2">
+                    <img src="~/Content/Images/XE/yamahapenl.jpg" alt="" width="100%" height="200 ">
+                </div>
+
+                <div class="slide_3">
+                    <img src="~/Content/Images/XE/yamahapenl.jpg" alt="" width="100%" height="200 ">
+                </div>
+
+                <div id="danhsachxe">
+                    @foreach (var xeganmay in Model)
+                    {
+                        <div>
+                            <a href="@Url.Action("Details", "Home", new {id= xeganmay.MaXe})">
+                                @*<img class="hinhxe" alt="@xeganmay.TenXe" src="~/Content/Images/XE/@xeganmay.Anhbia" />*@
+                                <img class="hinhxe" alt=" @xeganmay.TenXe" src="~/Content/Images/XE/Yamaha/@xeganmay.Anhbia" />
+
+                                <p class="tenxe"> <span>@xeganmay.TenXe</span></p>
+
+                            </a>
+                        </div>
+                    }
+                </div>
+
+    </section>
+    <p>Trang @(Model.PageNumber < Model.PageCount ? Model.PageNumber : 0) / @Model.PageCount</p>
+    <div class="MenuTrang">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+    </div>
+</article>
+
+
+
+
+
+

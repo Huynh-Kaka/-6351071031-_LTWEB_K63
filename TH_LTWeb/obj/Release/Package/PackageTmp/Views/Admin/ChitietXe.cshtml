@@ -1,0 +1,145 @@
+﻿@model TH_LTWeb.Models.XEGANMAY
+
+@{
+    ViewBag.Title = "ChitietXe";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>ChitietXe</h2>
+
+<div>
+    <h4>XEGANMAY</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            Tên Xe
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenXe)
+        </dd>
+
+        <dt>
+            Giá bán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Giaban)
+        </dd>
+
+        <dt>
+            Mô tả
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mota)
+        </dd>
+
+        <dt>
+            Ảnh bìa
+        </dt>
+
+        <dd>
+    <img src ="@Url.Content("~/Content/Images/XE/Yamaha/" +Model.Anhbia)" width="120px" />
+        </dd>
+
+        <dt>
+            Ngày cập nhật
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaycapnhat)
+        </dd>
+
+        <dt>
+            Số lượng tồn
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluongton)
+        </dd>
+
+        <dt>
+            Loại xe
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLX)
+        </dd>
+
+        <dt>
+            Nhà phân phối
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaNPP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<style>
+    /* General Layout */
+    .dl-horizontal dt {
+        font-weight: bold;
+        padding-right: 10px;
+        width: 150px;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 160px;
+        margin-bottom: 10px;
+    }
+
+        /* Styling the image */
+        .dl-horizontal dd img {
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+
+    /* Title Styling */
+    h2 {
+        text-align: center;
+        color: #5a5a5a;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    /* Button Styling */
+    p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        p a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+            p a:hover {
+                background-color: #0056b3;
+            }
+
+    /* Section divider */
+    hr {
+        border-top: 2px solid #ccc;
+        width: 100%;
+    }
+</style>

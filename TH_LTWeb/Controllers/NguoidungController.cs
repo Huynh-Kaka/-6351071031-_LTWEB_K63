@@ -11,7 +11,7 @@ namespace TH_LTWeb.Controllers
     {
         // GET: Nguoidung
         //KHACHHANG db=new KHACHHANG();
-        QLBANXEGANMAYEntities1 db = new QLBANXEGANMAYEntities1();
+        QLBANXEGANMAYEntities3 db = new QLBANXEGANMAYEntities3();
         public ActionResult Index()
         {
             return View();

@@ -17,7 +17,7 @@ namespace TH_LTWeb.Controllers
     {
         // GET: Home
 
-        QLBANXEGANMAYEntities1 data = new QLBANXEGANMAYEntities1();
+        QLBANXEGANMAYEntities3 data = new QLBANXEGANMAYEntities3();
 
         private List<XEGANMAY> layxeganmaymoi(int count)
         {

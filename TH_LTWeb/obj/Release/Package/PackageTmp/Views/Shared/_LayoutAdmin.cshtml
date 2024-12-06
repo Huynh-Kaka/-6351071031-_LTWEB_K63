@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Admin</title>
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <script src="~/Scripts/jquery-1.4.2.min.js"></script>
+    <script src="~/Scripts/jquery-func.js"></script>
+    <script src="~/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector: "textarea" });</script>
+</head>
+<body>
+    <div id="container">
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <h1><a href="#">Admin STORE</a></h1>
+            </div>
+            <div class="social">
+                <span>Theo dõi:</span>
+                <ul>
+                    <li><a class="twitter" href="#">Twitter</a></li>
+                    <li><a class="facebook" href="#">Facebook</a></li>
+                    <li><a class="vimeo" href="#">Vimeo</a></li>
+                    <li><a class="rss" href="#">RSS</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav id="navigation">
+            <ul>
+                <li>@Html.ActionLink("Trang chủ", "Index", "Admin")</li>
+                <li>@Html.ActionLink("Giao diện bán hàng", "Index", "Home")</li>
+                <li>@Html.ActionLink("Quản lý nhà Phân phối", "Nhaxuatban", "Admin")</li>
+                <li>@Html.ActionLink("Quản lý Xe", "Xe", "Admin")</li>
+                <li>@Html.ActionLink("Thống kê Xe", "ThongKeXe", "Admin")</li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            @RenderBody()
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="lf">Copyright &copy; 2024 <a href="#">Store Admin</a>. All Rights Reserved.</p>
+            <p class="rf">Designed by <a href="http://chocotemplates.com/">ChocoTemplates</a></p>
+        </footer>
+    </div>
+</body>
+</html>

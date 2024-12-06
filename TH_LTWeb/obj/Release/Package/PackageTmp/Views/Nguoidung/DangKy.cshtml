@@ -1,0 +1,144 @@
+﻿@{
+    ViewBag.Title = "Dangky";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    table {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 50px auto;
+        width: 50%;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px 0;
+        font-size: 16px;
+        color: #555;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="email"] {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    .error-message {
+        color: red;
+        font-size: 14px;
+    }
+</style>
+
+<h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+<table>
+    @using (Html.BeginForm("Dangky", "Nguoidung", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true)
+
+        <tr>
+            <td>Họ tên khách hàng:</td>
+            <td>
+                @Html.TextBox("HotenKH", null, new { placeholder = "Nhập họ tên", maxlength = 50 })
+                <span class="error-message">@ViewData["Loil"]</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Tên đăng nhập:</td>
+            <td>
+                @Html.TextBox("TenDN", null, new { placeholder = "Nhập tên đăng nhập", maxlength = 50 })
+                <span class="error-message">@ViewData["Loi2"]</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mật khẩu:</td>
+            <td>
+                @Html.Password("Matkhau", null, new { placeholder = "Nhập mật khẩu", maxlength = 50 })
+                <span class="error-message">@ViewData["Loi3"]</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Mật khẩu nhập lại:</td>
+            <td>
+                @Html.Password("Matkhaunhaplai", null, new { placeholder = "Nhập lại mật khẩu", maxlength = 50 })
+                <span class="error-message">@ViewData["Loi4"]</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td>
+                @Html.TextBox("Email", null, new { placeholder = "Nhập email", type = "email", maxlength = 100 })
+                <span class="error-message">@ViewData["Loi5"]</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Điện thoại:</td>
+            <td>
+                @Html.TextBox("Dienthoai", null, new { placeholder = "Nhập số điện thoại", maxlength = 50 })
+                <span class="error-message">@ViewData["Loi6"]</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Địa chỉ:</td>
+            <td>
+                @Html.TextBox("Diachi", null, new { placeholder = "Nhập địa chỉ", maxlength = 200 })
+            </td>
+        </tr>
+
+        <tr>
+            <td>Ngày sinh:</td>
+            <td>
+                <input type="date" name="Ngaysinh" />
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Đăng ký" />
+            </td>
+        </tr>
+    }
+</table>

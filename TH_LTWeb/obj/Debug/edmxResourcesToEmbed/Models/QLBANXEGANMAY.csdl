@@ -219,5 +219,14 @@
       <End Role="XEGANMAY" EntitySet="XEGANMAYs" />
       <End Role="SANXUATXE" EntitySet="SANXUATXEs" />
     </AssociationSet>
+    <EntitySet Name="Admins" EntityType="QLBANXEGANMAYModel.Admin" />
   </EntityContainer>
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="UserAdmin" />
+    </Key>
+    <Property Name="UserAdmin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PassAdmin" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Hoten" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

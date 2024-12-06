@@ -1,0 +1,197 @@
+﻿  ﻿@using TH_LTWeb.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<TH_LTWeb.Models.XEGANMAY>
+
+@{
+    ViewBag.Title = "Xe";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@helper Truncate(string input,int length) { 
+    if(input.Length<length)
+    {
+        @input
+    }
+    else
+    {
+        @input.Substring(0,length)<text>...</text>
+    }
+    }
+<h2>Xe</h2>
+
+<p>
+    @Html.ActionLink("Create New", "ThemmoiXe")
+</p>
+<table class="table">
+    <tr>
+        <th>Tên Xe</th>
+        <th>Giá bán</th>
+        <th>Mô tả</th>
+        <th>Ảnh bìa</th>
+        <th>Ngày cập nhật</th>
+        <th>Số lượng tồn</th>
+        <th>Loại xe</th>
+        <th>Nhà xuất bản</th>
+        <th>Hành động</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.MaXe)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.TenXe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Giaban)
+            </td>
+            <td>
+                @Truncate(item.Mota,100)
+            </td>
+            <td>
+                <img style="width: 140px; height: 200px" src="@Url.Content("~/Content/Images/XE/Yamaha/" + item.Anhbia)" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ngaycapnhat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soluongton)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LOAIXE.TenLoaiXe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NHAPHANPHOI.TenNPP)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "SuaXe", new { id = item.MaXe }) |
+                @Html.ActionLink("Chi tiết", "ChitietXe", new { id = item.MaXe }) |
+                @Html.ActionLink("Xóa", "XoaXe", new { id = item.MaXe })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount</p>
+<div class="MenuTrang" style="margin-left: 300px">
+    @Html.PagedListPager(Model, page => Url.Action("Xe", new { page = page }))
+</div>
+
+<style>
+    /* Cải tiến bảng */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+    }
+
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .table th {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table tr:hover {
+            background-color: #ddd;
+        }
+
+    /* Menu Phân Trang */
+    .MenuTrang {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .MenuTrang ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 5px;
+        }
+
+        .MenuTrang li {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .MenuTrang li:hover {
+                background-color: #0056b3;
+            }
+
+        .MenuTrang a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .MenuTrang .active {
+            background-color: #28a745;
+        }
+
+    /* Nút hành động */
+    .btn {
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-warning {
+        background-color: #ffc107;
+        color: white;
+        border: none;
+    }
+
+        .btn-warning:hover {
+            background-color: #e0a800;
+        }
+
+    .btn-info {
+        background-color: #17a2b8;
+        color: white;
+        border: none;
+    }
+
+        .btn-info:hover {
+            background-color: #117a8b;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+</style>
+

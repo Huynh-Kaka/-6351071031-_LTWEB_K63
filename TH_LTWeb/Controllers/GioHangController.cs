@@ -10,7 +10,7 @@ namespace TH_LTWeb.Controllers
     public class GioHangController : Controller
     {
         // GET: GioHang
-        QLBANXEGANMAYEntities1 db = new QLBANXEGANMAYEntities1();
+        QLBANXEGANMAYEntities3 db = new QLBANXEGANMAYEntities3();
         public List<GioHang> layGioHang()
         {
             List<GioHang> listGioHang = Session["GioHang"] as List<GioHang>;

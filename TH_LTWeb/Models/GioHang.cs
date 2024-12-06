@@ -7,7 +7,7 @@ namespace TH_LTWeb.Models
 {
     public class GioHang
     {
-        QLBANXEGANMAYEntities1 db = new QLBANXEGANMAYEntities1();
+        QLBANXEGANMAYEntities3 db = new QLBANXEGANMAYEntities3();
         public int smaXe { get; set; }
         public string stenXe { get; set; }
         public string sAnhBia { get; set; }

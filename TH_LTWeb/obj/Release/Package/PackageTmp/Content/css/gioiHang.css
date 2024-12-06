@@ -1,0 +1,115 @@
+﻿﻿<style >
+/* Cải thiện kiểu chữ và màu sắc */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    margin-left: 100px;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/* Tạo kiểu cho bảng */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    /* Kiểu cho các ô trong bảng */
+    table td, table th {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    /* Tăng cường kiểu cho các tiêu đề bảng */
+    table th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Hiệu ứng hover cho các dòng trong bảng */
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Chỉnh sửa kiểu cho ảnh */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Kiểu cho các dòng tổng số lượng và tổng tiền */
+tr.total-row {
+    font-weight: bold;
+    text-align: right;
+    color: red;
+}
+
+    tr.total-row td {
+        background-color: #f4f4f4;
+    }
+
+</style >
+<style >
+/* Phần số trang hiện tại và tổng số trang */
+p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Menu phân trang */
+.MenuTrang {
+    text-align: center;
+}
+
+    .MenuTrang ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+        .MenuTrang ul li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+            .MenuTrang ul li a {
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
+                color: #007bff;
+                padding: 5px 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+                .MenuTrang ul li a:hover {
+                    background-color: #007bff;
+                    color: #fff;
+                }
+
+            /* Trang hiện tại */
+            .MenuTrang ul li.active a {
+                background-color: #007bff;
+                color: #fff;
+                border: 1px solid #007bff;
+            }
+
+</style >

@@ -1,0 +1,34 @@
+﻿@model TH_LTWeb.Models.XEGANMAY
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2>Thông tin chi tiết xe gắn máy </h2>
+
+<div class="form-group">
+    <label for="TenXe">Tên Xe:</label>
+    <p>@Model.TenXe</p>
+</div>
+
+<div class="form-group">
+    <label for="Gia">Giá:</label>
+    <p>@Model.Giaban</p>
+</div>
+
+<div class="form-group">
+    <label for="MoTa">Mô Tả:</label>
+    <p>@Model.Mota</p>
+</div>
+
+<img class="hinhxe" alt=" @Model.TenXe" src="~/Content/Images/XE/Yamaha/@Model.Anhbia" />
+
+<div>
+    <a href="@Url.Action("Index", "Home")">Trở lại trang chủ</a>
+</div>
+
+<div>
+    @Html.ActionLink("Đặt xe", "themGioHang", "GioHang", new { id = Model.MaXe, url = Request.Url.ToString() }, new { @class = "btn-datxe" })
+</div>
+
